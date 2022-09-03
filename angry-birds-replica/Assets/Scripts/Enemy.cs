@@ -4,14 +4,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public static int EnemiesAlive = 0;
-    public GameObject deathEffect;
+    public GameObject deathEffect, hurtEffect;
     public float health = 4f;
     void Start() {
         EnemiesAlive++;
     }
     void OnCollisionEnter2D(Collision2D colInfo) {
-        if (colInfo.relativeVelocity.magnitude > health) {
+        health -= colInfo.relativeVelocity.magnitude * 0.5f;
+        if (health <= 0) {
             Die();
+        } else {
+            Hurt();
         }
     }
     
@@ -22,5 +25,8 @@ public class Enemy : MonoBehaviour
         if (EnemiesAlive <= 0) {
             Debug.Log("Level WON!");
         }
+    }
+    void Hurt() {
+        Instantiate(hurtEffect, transform.position, Quaternion.identity);
     }
 }

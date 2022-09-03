@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 5047183522469989892, guid: e68ab32fe95c59b4d9f1a5ecd328284f,
     type: 3}
+  hurtEffect: {fileID: 1112585779913968440, guid: 3711fdfbecea11948b6fa477f591295d,
+    type: 3}
   health: 4
 --- !u!58 &3020619439780803366
 CircleCollider2D:
