@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3020619439780803364}
   - component: {fileID: 3020619439780803365}
-  - component: {fileID: 9135839062507302306}
   - component: {fileID: 3020619439780803366}
   - component: {fileID: 3020619439780803367}
+  - component: {fileID: -6009104567080330964}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -84,23 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9135839062507302306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3020619439780803360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bbada97fca349d4d8a0727dd4e66c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathEffect: {fileID: 5047183522469989892, guid: e68ab32fe95c59b4d9f1a5ecd328284f,
-    type: 3}
-  hurtEffect: {fileID: 1112585779913968440, guid: 3711fdfbecea11948b6fa477f591295d,
-    type: 3}
-  health: 4
 --- !u!58 &3020619439780803366
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -138,3 +121,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6009104567080330964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3020619439780803360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbada97fca349d4d8a0727dd4e66c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 5047183522469989892, guid: e68ab32fe95c59b4d9f1a5ecd328284f,
+    type: 3}
+  hurtEffect: {fileID: 1112585779913968440, guid: 3711fdfbecea11948b6fa477f591295d,
+    type: 3}
+  health: 4

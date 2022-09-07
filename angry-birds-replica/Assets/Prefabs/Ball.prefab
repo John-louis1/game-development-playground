@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5045718242677729374}
   - component: {fileID: 5045718242677729375}
   - component: {fileID: 5045718242677729371}
-  - component: {fileID: 5045718242677729370}
   - component: {fileID: 5045718242677729365}
+  - component: {fileID: 7620825980811714185}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -140,25 +140,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.005
+  m_Distance: 4.98
   m_DampingRatio: 0
   m_Frequency: 1.5
---- !u!114 &5045718242677729370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5045718242677729372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59717e536d1e83645bbe868204529948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rbBall: {fileID: 5045718242677729375}
-  rbHook: {fileID: 0}
-  maxDragDistance: 2
-  releaseTime: 0.15
 --- !u!96 &5045718242677729365
 TrailRenderer:
   serializedVersion: 2
@@ -256,3 +240,20 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &7620825980811714185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045718242677729372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7092e525bc02ef49bcf0a6bf40c3ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbBall: {fileID: 5045718242677729375}
+  rbHook: {fileID: 0}
+  maxDragDistance: 2
+  releaseTime: 0.15
+  nextBall: {fileID: 0}
