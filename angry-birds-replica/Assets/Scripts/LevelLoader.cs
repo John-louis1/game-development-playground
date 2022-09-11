@@ -10,9 +10,10 @@ namespace LevelLoading {
         public float transitionDuration = 1f;
         
         void Update() {
-            if (Enemy.EnemiesAlive <= 0) {
+            if ((SceneManager.GetActiveScene().buildIndex != 0 && Enemy.EnemiesAlive <= 0)
+            || (SceneManager.GetActiveScene().buildIndex == 0 && MainMenuScript.play)) {
                 LoadNextLevel();
-            }
+            } 
         }
 
         public void LoadNextLevel() {

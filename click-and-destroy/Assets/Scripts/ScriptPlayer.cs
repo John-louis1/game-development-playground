@@ -13,7 +13,6 @@ public class ScriptPlayer : MonoBehaviour
     void Update() {
         // Use mouse to select a game object in the scene
         if (Input.GetMouseButtonDown(0)) {
-            RaycastHit hit;
 
         }
     }

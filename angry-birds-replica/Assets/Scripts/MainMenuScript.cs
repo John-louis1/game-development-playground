@@ -6,13 +6,14 @@ using LevelLoading;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public static bool play = false;
     public void Play() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        LevelLoader ll = new LevelLoader();
-        ll.LoadNextLevel();
+        play = true;
     }
 
     public void Quit() {
         Application.Quit();
     }
+    
 }

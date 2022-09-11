@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1618818120914336241}
   - component: {fileID: 3597646531704205556}
   m_Layer: 0
-  m_Name: prefabEnemySphere
+  m_Name: prefabEnemyCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

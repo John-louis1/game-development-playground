@@ -1078,6 +1078,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 3.69}
   m_EdgeRadius: 0
+--- !u!95 &1743191780 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2000001883041612877, guid: 2ff0732f72560ae4e879410805c46353,
+    type: 3}
+  m_PrefabInstance: {fileID: 189131053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2092625689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1302,6 +1308,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6009104567080330964, guid: 595d1e0f876320c4e804addb4158e1c0,
+        type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1743191780}
     - target: {fileID: 3020619439780803360, guid: 595d1e0f876320c4e804addb4158e1c0,
         type: 3}
       propertyPath: m_Name

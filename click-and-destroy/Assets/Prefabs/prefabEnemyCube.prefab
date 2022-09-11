@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1149395293897770496}
   - component: {fileID: 7578602788435868074}
   - component: {fileID: 3323940323470354846}
-  - component: {fileID: 5916633099644849130}
+  - component: {fileID: 6081768367210499116}
   m_Layer: 0
   m_Name: prefabEnemyCube
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5916633099644849130
+--- !u!114 &6081768367210499116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,6 +103,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 243173038844542092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3bb3a0cfdbb8a409fbca60806df807, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c596b5e72f7cb84aac998bbf776b66f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
