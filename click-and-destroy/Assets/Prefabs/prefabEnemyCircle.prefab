@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7713234011965921942}
   - component: {fileID: 1618818120914336241}
   - component: {fileID: 3597646531704205556}
+  - component: {fileID: 3417891150156001530}
   m_Layer: 0
   m_Name: prefabEnemyCircle
   m_TagString: Untagged
@@ -93,3 +94,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3417891150156001530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366800590915841815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c596b5e72f7cb84aac998bbf776b66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

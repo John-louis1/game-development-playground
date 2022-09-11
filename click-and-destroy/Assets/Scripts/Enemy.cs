@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScriptEnemy : MonoBehaviour {
+public class Enemy : MonoBehaviour {
     public int numberOfClicks = 2;
 
     void Update() {
@@ -19,5 +19,9 @@ public class ScriptEnemy : MonoBehaviour {
 
     void RandomColor() {        // Change the material of the game object
 
+    }
+
+    public void setNumberOfClicks(int number) {
+        numberOfClicks = number;
     }
 }
