@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ScriptLose : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+public class ScriptLose : MonoBehaviour {
+    public float buttonSize = 100f;
+    void OnGUI() {
+        GUI.Label(new Rect(30, 30, 100, 50), "You Lose!");
+        if (GUI.Button(new Rect(30, 90, buttonSize, 50), "Restart Game")) {
+            SceneManager.LoadScene("sceneLevel1");
+        }
+        if (GUI.Button(new Rect(30, 150, buttonSize, 50), "Exit Game")) {
+            Application.Quit();
+        }
     }
 }
